@@ -1,0 +1,59 @@
+html {
+    font-family: Akshar, 'BIZ UDPGothic', sans-serif;
+    color: #205959;
+    background: linear-gradient(194deg, #F2FAFA 0%, #E2ECEC 56%, #A5D3D3 100%);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 100%;
+    /* background-color: #F2FAFA; */
+}
+
+body {
+    display: flex;
+}
+
+nav {
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: #D47311;
+}
+
+h1, h1 > p, section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .blurb {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.blurb > p {
+    width: 750px;
+}
+
+#home-photo {
+    box-sizing: border-box;
+    border: 10px solid #205959;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-radius: 50%;
+    /* display: inline-flex; */
+}
+
+#contact-photo {
+    display: inline-flex;
+    justify-content: flex-end;
+    border: 10px solid #205959;
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
+
+
+
+/* .bio {
+    
+} */
