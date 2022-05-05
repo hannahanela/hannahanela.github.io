@@ -5,18 +5,13 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: Akshar, sans-serif;
     color: #205959;
 }
 
 #main-header {
-    display: flex;
-    flex-direction: column;
     height: 200px;
     text-align: center;
-    /* layered vertically */
 }
 
 a, #email {
@@ -36,20 +31,9 @@ a:visited, #email:visited {
 
 .home-page {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    /* flex: 1 1 0; */
-}
-
-.space {
-    display: flex;
-    width: 250px;
-}
-
-.photo {
-    display: flex;
-    align-self: flex-end;
-    flex: 1 1 0;
+    max-width: 1060px;
+    margin: 30px auto;
+    flex-wrap: wrap;
 }
 
 /* home specific */
@@ -63,20 +47,18 @@ a:visited, #email:visited {
 }
 
 .blurb {
-    display: flex-inline;
+    display: flex;
     width: 550px;
-    min-width: min-content;
-    flex: 1 1 0
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
 }
 
 /* about specific */
 
 .about-page {
-    display: flex;
-    flex-direction: column;
     max-width: 1250px;
-    min-width: min-content;
-    margin: auto;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -84,13 +66,12 @@ a:visited, #email:visited {
 
 .contact-page {
     display: flex;
-    flex-direction: row;
+    max-width: 1060px;
+    margin: 30px auto;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    padding: 0 100px;
 }
 
 #contact-photo {
@@ -103,7 +84,7 @@ a:visited, #email:visited {
 .fa {
     color: #205959;
     text-decoration: none;
-    border-radius: 50%;
+    max-width: max-content;
 }
 
 .fa:hover {
