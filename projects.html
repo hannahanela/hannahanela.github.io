@@ -12,23 +12,21 @@
     <body>
         <header id="main-header">
             <nav>
-                <a href="/" class="nav-item">About</a>
-                <a href="./projects" class="nav-item">Projects</a>
-                <a class="nav-link" target="_blank" href="https://ham-resume.s3.us-west-1.amazonaws.com/hannah-mayer-software-engineer.pdf"
+                <a class="link" href="/">About</a>
+                <a class="link" href="./projects">Projects</a>
+                <a class="link" target="_blank" href="https://ham-resume.s3.us-west-1.amazonaws.com/hannah-mayer-software-engineer.pdf"
                 download="hannah-mayer-resume">Resume</a>
             </nav>
             <h1>Projects</h1>
         </header>
         <!-- Page content-->
-        <div>
-            <div class="container">
+        <div class="projects">
+            <div class="project">
                 <h2>Jobly</h2>
-                <span>
-                    <a target="_blank" href="https://r26-hannah-jobly.surge.sh/">Demo</a>
-                    <a target="_blank" href="https://github.com/hannahanela/react-jobly">GitHub</a>
-                </span>
+                <a class="project-link" target="_blank" href="https://r26-hannah-jobly.surge.sh/">Demo</a>
+                <a class="project-link" target="_blank" href="https://github.com/hannahanela/react-jobly">GitHub</a>
                 <p>React | Node | Express | PostgreSQL</p>
-                <p>
+                <p class="project-text">
                     Jobly is a job listing single page React application with
                     authentication and search functionality. A user registers or
                     logs in and receives a personalized login confirmation
@@ -37,14 +35,12 @@
                     companies, as well as search by company name or job title.
                 </p>
             </div>
-            <div class="container">
+            <div class="project">
                 <h2>Warbler</h2>
-                <span>
-                    <a target="_blank" href="https://r26-hannah-warbler.herokuapp.com/">Demo</a>
-                    <a target="_blank" href="https://github.com/hannahanela/warbler">GitHub</a>
-                </span>
+                    <a class="project-link" target="_blank" href="https://r26-hannah-warbler.herokuapp.com/">Demo</a>
+                    <a class="project-link" target="_blank" href="https://github.com/hannahanela/warbler">GitHub</a>
                 <p>Flask | PostgreSQL</p>
-                <p>
+                <p class="project-text">
                     Warbler is a Twitter clone Flask app with user authorization
                     and authentication. Once registered or logged in, a user
                     sees a feed of 100 most recent "warbles" from only users they
@@ -53,37 +49,37 @@
                     Profile editing features data validation and CSRF protection.
                 </p>
             </div>
-            <div class="container">
-                <p class="lead">
+            <div class="project">
+                <p>
                     <h2><a id="sis">Student Information System - Rithm internship 8/2022</a></h2>
                 </p>
-                <a href="#sis"></a>
+                <a href="#sis" id="sis"></a>
                 <p>Django | PostgreSQL | REST | SASS</p>
-                <p>
+                <p class="project-text">
                     The Student Information System (SIS) supports the students
                     and staff of the Rithm School full stack web development
                     program.
                 </p>
-                <p>
+                <p class="project-text">
                     As an intern, I completed tickets in an agile environment
                     that included building new features, debugging, and
                     writing unit and integration tests while maintaining 98%
                     test coverage.
                 </p>
-                <p>
+                <p class="project-text">
                     While I cannot provide access to the proprietary git repository,
                     I can share screen shots from a ticket I completed to add a field
                     and initialize testing for the newest SIS feature.
                 </p>
-                <p>Added goals field to _submodel_main_fields (line 208):</p>
+                <p class="project-text">Added goals field to _submodel_main_fields (line 208):</p>
                 <img src="./assets/apply-admin.png" alt="Code block of 
                 the apply admin file.">
 
-                <p>Wrote entire test file for apply admin:</p>
+                <p class="project-text">Wrote entire test file for apply admin:</p>
                 <img src="./assets/apply-test-admin.png" alt="Code block
                 of the apply admin test file.">
                 
-                <p>Added goals to Application model (lines 245-248):</p>
+                <p class="project-text">Added goals to Application model (lines 245-248):</p>
                 <img src="./assets/apply-models.png" alt="Code block from
                 the apply models file.">
 

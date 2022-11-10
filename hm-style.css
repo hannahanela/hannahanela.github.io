@@ -11,22 +11,28 @@ body {
 }
 
 #main-header {
-    height: 200px;
+    height: 100px;
     text-align: center;
 }
 
-a:visited {
-    color: #0DBBCF;
-}
-
-a, #email {
-    color: #0DBBCF;
+a {
+    color: #205959;
     text-decoration: none;
 }
 
-a:hover, #email:hover {
+a:hover {
     text-decoration: underline;
     opacity: 0.7;
+}
+
+a:visited {
+    color: #205959;
+
+}
+
+.link {
+    padding: 1em;
+    font-weight: bold;
 }
 
 .container {
@@ -43,9 +49,29 @@ a:hover, #email:hover {
     border-radius: 50%;
 }
 
+.projects {
+    margin-left: 100px;
+    margin-right: 75px;
+}
+
+.project {
+    padding: 1em;
+}
+
+.project-text {
+    text-align: justify;
+    width: 700px;
+}
+
+.project-link {
+    font-weight: bold;
+    padding-right: 1em;
+}
+
 #sis {
     color: #205959;
     text-decoration: none;
+    opacity: 100%;
 }
 
 .fa {
