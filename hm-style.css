@@ -41,13 +41,10 @@ a:hover, #email:hover {
     border-radius: 50%;
 }
 
-/* .blurb {
-    display: flex;
-    width: 550px;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 30px;
-} */
+#sis {
+    color: #205959;
+    text-decoration: none;
+}
 
 .fa {
     color: #205959;
