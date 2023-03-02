@@ -46,16 +46,20 @@ main {
   text-align: center;
 }
 
-/* .fa {
-  max-width: max-content;
-} */
+.card {
+  background: black;
+}
 
-h3, p {
+.bio {
   text-align: justify;
 }
 
 #profile-img {
   border-radius: 50%;
+}
+
+.padding {
+  padding-top: 75px;
 }
 
 /* Navbar */
