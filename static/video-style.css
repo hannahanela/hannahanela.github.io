@@ -20,19 +20,19 @@ body {
     justify-content: center;
 }
 
-.header-link {
-  display: inline;
+h3 {
+  text-align: justify;
 }
 
-h1 {
-    margin: 1em;
-    text-align: center;
-    font-weight: bold;
-  }
+main {
+  background-color: rgba(0, 0, 0, 0.66);
+  position: relative;
+}
 
 .content {
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  /* background-color: black; */
 }
   
   a {
@@ -44,7 +44,6 @@ h1 {
   
   a:hover {
     color: #472357;
-    text-decoration: underline;
     opacity: 0.7;
   }
   
@@ -101,7 +100,6 @@ h1 {
   
   .nav-link:hover {
     color: #205959;
-    text-decoration: underline;
     opacity: 0.7;
   }
   
