@@ -17,7 +17,7 @@ a:hover {
 }
 
 a:visited {
-  color: #5C4781 ;
+  color: #5C4781;
 }
 
 /* Header */
@@ -48,25 +48,53 @@ main {
 
 .card {
   background: black;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.19);
 }
 
-.bio {
+.btn {
+  background-color: #5C4781;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+  background-color: #5C4781;
+  opacity: 0.7;
+}
+
+.btn:visited {
+  color: white;
+}
+
+h3, p {
   text-align: justify;
 }
 
 #profile-img {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.19);
 }
 
 .padding {
   padding-top: 75px;
 }
 
+.header-padding {
+  padding-top: 35px;
+}
+
+.btn-padding {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* Navbar */
 
-/* .navbar {
+.navbar {
   background: black;
-} */
+}
 
 .navbar-collapse {
   justify-content: center;
