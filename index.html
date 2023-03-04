@@ -7,68 +7,138 @@
   <title>Hannah Mayer</title>
   
   <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
-  <script src="https://unpkg.com/popper"></script>
   <script src="https://unpkg.com/bootstrap"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/04f25b9e6e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./">Hannah Mayer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank"
-                href="https://ham-resume.s3.us-west-1.amazonaws.com/hannah-mayer-software-engineer.pdf"
-                download="hannah-mayer-resume">Resume</a>
-          </li>
-        </ul>
+  <video src="./static/veil-91088.mp4" autoplay muted loop playsinline id="video">
+  </video>
+  <header class="viewport-header">
+    <h1 class="px-4">Hannah Mayer</h1>
+    <h1 class="px-4">Software Engineer</h1>
+  </header>
+  <div class="sticky-bottom text-center">
+    <a href="#projects">
+      <i class="fa-solid fa-angles-down" id="down-arrows"></i>
+    </a>
+  </div>
+  <main>
+    <!-- Projects -->
+    <div class="container p-2 my-4">
+      <div class="row">
+        <div class="padding"></div>
+        <h4 class="display-4 pb-4" id="projects">Projects</h4>
+        <div class="header-padding"></div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="./static/images/jobly-homepage.png" alt="Jobly homepage">
+            <div class="card-body">
+              <h4 class="card-title">Jobly</h4>
+              <p class="card-text my-2">React | Node | Express | PostgreSQL</p>
+              <p class="card-text">
+                Jobly is a job listing single page React application with
+                authentication and search functionality. A user registers or
+                logs in and receives a personalized login confirmation
+                message and private routes accessible only through
+                authentication. Users can browse all job listings and
+                companies, as well as search by company name or job title.
+              </p>
+              <p>
+                Demo login credentials:
+              </p>
+              <p>
+                username: TestUser | password: password
+              </p>
+              <a class="btn" target="_blank" href="https://r26-hannah-jobly.surge.sh/">Demo</a>
+              <span class="btn-padding"></span>
+              <a class="btn" target="_blank" href="https://github.com/hannahanela/react-jobly">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="./static/images/warbler-homepage.png" alt="Jobly homepage">
+            <div class="card-body">
+              <h4 class="card-title">Warbler</h4>
+              <p class="card-text my-2">Flask | PostgreSQL</p>
+              <p class="card-text">
+                Warbler is a Twitter clone Flask app with user authorization
+                and authentication. Once registered or logged in, a user
+                sees a feed of 100 most recent "warbles" from only users they
+                follow or their own. Users can post warbles, follow/unfollow
+                other users, like warbles, and search for users.
+                Profile editing features data validation and CSRF protection.
+              </p>
+              <p>
+                Demo login credentials:
+              </p>
+              <p>
+                username: TestUser | password: password
+              </p>
+              <a class="btn" target="_blank" href="https://r26-hannah-warbler.herokuapp.com/">Demo</a>
+              <span class="btn-padding"></span>
+              <a class="btn" target="_blank" href="https://github.com/hannahanela/warbler">GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Page content -->
-
-  <h1>Hi, I'm Hannah!</h1>
-  <div class="container p-2 my-2">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="./static/images/ham-headshot-2022-11-20-square.jpeg"
-        class="img-fluid mb-sm-2"
-        id="profile-img"
-        alt="Hannah Mayer in bright button up">
+    <div class="padding"></div>
+    <div class="container p2 my-5">
+      <i class="fa-brands fa-node fa-2xl px-4"></i>
+      <i class="fa-brands fa-react fa-2xl px-4"></i>
+      <i class="fa-brands fa-square-js fa-2xl px-4"></i>
+      <i class="fa-brands fa-python fa-2xl px-4"></i>
+      <i class="fa-brands fa-html5 fa-2xl px-4"></i>
+      <i class="fa-brands fa-css3-alt fa-2xl px-4"></i>
+      <i class="fa-brands fa-bootstrap fa-2xl px-4"></i>
+      <i class="fa-brands fa-ubuntu fa-2xl px-4"></i>
+    </div>
+    <!-- About -->
+    <div class="container p-2 my-4">
+      <div class="row">
+        <div class="padding"></div>
+        <h4 class="display-4 pb-4" id="about">About Me</h4>
+        <div class="header-padding"></div>
+        <div class="col-md-4 mt-4">
+          <img src="./static/images/ham-headshot-2022-11-20-square.jpeg"
+          class="img-fluid mb-sm-2"
+          id="profile-img"
+          alt="Hannah Mayer in bright button up">
+        </div>
+        <div class="col-md-8 mt-4">
+          <h3 class="bio">Hi, I'm Hannah!</h3>
+          <p>I'm a full stack software engineer based in Oakland, California.</p>
+          <p>
+              A graduate of the Rithm School, I'm excited to bring my
+              passion for collaboration and creative placemaking to the
+              tech field. I was a cellist for 25 years specializing in
+              experimental classical music and noise. In 2017 I co-founded
+              the Omaha-based nonprofit OutrSpaces. A performing arts
+              hackerspace by day and concert venue by night, OutrSpaces
+              gave artists resources to hone their craft, network with
+              other performers, and connect with their audience
+          </p>
+          <p class="bio">
+              I'm eager to explore how tech can bring people together in
+              ways that feel approachable and thoughtful, with an element
+              of the unexpected.
+          </p>
+        </div>
       </div>
-      <div class="col-md-8">
-        <p>I'm a full stack software engineer based in Oakland, California.</p>
-        <p>
-            A graduate of the Rithm School, I'm excited to bring my
-            passion for collaboration and creative placemaking to the
-            tech field. I was a cellist for 25 years specializing in
-            experimental classical music and noise. In 2017 I co-founded
-            the Omaha based nonprofit OutrSpaces. A performing arts
-            hackerspace by day and concert venue by night, OutrSpaces
-            gave artists resources to hone their craft, network with
-            other performers, and connect with their audience
-        </p>
-        <p>
-            I'm eager to explore how tech can bring people together in
-            ways that feel approachable and thoughtful, with an element
-            of the unexpected.
-        </p>
-        <div>
-          <a class="my-2" href="mailto:hannah@hannahmayer.com">hannah@hannahmayer.com</a>
+    </div>
+    <!-- Contact -->
+    <div class="container p2 my-4">
+      <div class="row">
+        <div class="padding"></div>
+        <h4 class="display-4 pb-4" id="contact">Contact Me</h4>
+        <div class="header-padding"></div>
+        <div class="my-2">
           <a class="p-2 my-2" target="_blank" href="https://www.linkedin.com/in/hannah-mayer-755718249/">
             <i class="fa-brands fa-linkedin fa-2xl"></i>
           </a>
@@ -76,8 +146,46 @@
             <i class="fa-brands fa-github fa-2xl"></i>
           </a>
         </div>
+        <div class="my-2">
+          <a class="my-2" href="mailto:hannah@hannahmayer.com">hannah@hannahmayer.com</a>
+        </div>
+        <div class="padding"></div>
       </div>
     </div>
-  </div>
+    <footer>Video by <a href="https://pixabay.com/users/christianbodhi-9869182/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=91088">Christian Bodhi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=91088">Pixabay</a></footer>
+    <div class="header-padding"></div>
+    <!-- Navigation -->
+    <nav class="navbar sticky-bottom navbar-expand-sm">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="./">Hannah Mayer</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./">
+                <i class="fa-solid fa-angles-up"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank"
+                  href="https://ham-resume.s3.us-west-1.amazonaws.com/hannah-mayer-software-engineer.pdf"
+                  download="hannah-mayer-resume">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </main>
 </body>
 </html>
