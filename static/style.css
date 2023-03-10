@@ -28,6 +28,14 @@ video {
   background: black;
 }
 
+#video {
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -ms-animation: fadein 5s;
+  -o-animation: fadein 5s;
+  animation: fadein 5s;
+}
+
 .viewport-header {
   position: relative;
   height: 100vh;
@@ -38,11 +46,11 @@ video {
 }
 
 #down-arrows {
-  -webkit-animation: fadein 10s;
-  -moz-animation: fadein 10s;
-  -ms-animation: fadein 10s;
-  -o-animation: fadein 10s;
-  animation: fadein 10s;
+  -webkit-animation: fadein 15s;
+  -moz-animation: fadein 15s;
+  -ms-animation: fadein 15s;
+  -o-animation: fadein 15s;
+  animation: fadein 15s;
 }
 
 @keyframes fadein {
